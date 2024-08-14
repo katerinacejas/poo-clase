@@ -18,5 +18,14 @@ public class Main {
 
         chispi.setTamanio(5.7);
         System.out.println("El tamanio de chispi es: " + chispi.getTamanio() + " kilos");
+
+        Collar unCollar = new Collar();
+        unCollar.setColor("Azul");
+        chispi.setMiCollar(unCollar);
+        System.out.println("el color del collar de chispi es: " + chispi.colorDeMiCollar());
+
+        unCollar.setColor("Negro");
+        System.out.println("el color del collar de chispi luego de cambiarlo es : " + chispi.colorDeMiCollar());
+
     }
 }
